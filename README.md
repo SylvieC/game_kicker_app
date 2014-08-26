@@ -1,5 +1,5 @@
 
- # GAME KICKER_APP
+ ## GAME KICKER
 
 Technologies used: 
  * Ruby on Rails
