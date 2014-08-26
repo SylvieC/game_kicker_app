@@ -1,5 +1,5 @@
 
- ## GAME KICKER
+ ** GAME KICKER **
 
 Technologies used: 
  * Ruby on Rails
