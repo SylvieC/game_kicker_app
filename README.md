@@ -3,7 +3,7 @@
 
 Technologies used: 
  * Ruby on Rails
- * gem 'tts' (text-to-speed) from Google Translate to create the audio files 
+ * gem 'tts' (text-to-speech) from Google Translate to create the audio files 
 
 This Ruby on Rails app guides the user in setting up the popular strategic board game Avalon.
 Before the game starts and once the players know their loyalty, a Leader must recite a long text to ensure that some players know about some specific other players. He has to recite it because all the players have their eyes closed. This text varies according to the characters chosen. There are 14 different versions, according to the 14 possible combinations of characters possible. To simplify the Leader's role, an audio file corresponding to the characters chosen is played instead. 
