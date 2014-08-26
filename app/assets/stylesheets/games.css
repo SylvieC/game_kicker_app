@@ -1,0 +1,72 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  background:yellow
+}
+h1#title{
+  text-align: center;
+  margin-bottom: 40px;
+}
+/*#morgana{
+  background: red;
+  border:1px solid black;
+  width: 70px;
+  height 95px;
+}*/
+#six{
+  text-align: center;
+}
+.blue{
+  color: blue;
+
+}
+
+.orange{
+  color:orange;
+}
+
+.nav{
+  background:yellow;
+}
+
+li{
+  width: 15%;
+  padding: 30px;
+
+}
+.num{
+  font-size:40px;
+}
+a{
+  padding-left: 5px;
+}
+li{
+padding:30px;
+background:yellow;
+margin:10px;
+
+}
+ul{
+ list-style-type: none;
+}
+.numPlayer ul li { display: inline; 
+}
+
+.deck{
+  height:250px;
+}
+.howMany{
+  text-align:center;
+}
+
+#percival{
+  background:lightblue;
+}
+#morgana, #mordred, #oberon{
+  background:coral;
+}
+
+.bottom{
+  margin-top: 500px;
+}

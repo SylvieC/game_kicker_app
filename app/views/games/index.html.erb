@@ -1,0 +1,105 @@
+
+
+  <div class="container">
+    <h1 id='title'> AVALON</h1>
+ 
+    <p><em class = 'animated rubberBand'> First, pick the number of players</em>
+        <div class="row">
+            <div class="col-xs-2 playerChoice blue">
+                <div class="well box" id="box5">5</div>
+            </div>
+            <div class="col-xs-2 playerChoice six">
+                <div class="well box" id="box6">6</div>
+            </div>
+            <div class="col-xs-2 playerChoice">
+                <div class="well box" id="box7">7</div>
+            </div>
+            <div class="col-xs-2 playerChoice">
+                <div class="well box" id="box8">8</div>
+            </div>
+            <div class="col-xs-2 playerChoice">
+                <div class="well box" id="box9">9</div>
+            </div>
+            <div class="col-xs-2 playerChoice">
+                <div class="well box" id="box10">10</div>
+            </div>
+        </div>  
+    </div>
+
+
+<div id='show'>
+    You need  2 characters from the good side and 3 from the evil 
+    Click on the Characters you choose
+
+
+ <%=audio_tag("basic2.mp3", controls: true) %>
+
+</div>
+<!-- <div id='morgana'>
+    picture of Morgana
+</div>
+<div id='1'>
+    hey I am the one
+</div> -->
+
+<!--  pry
+ require 'tts'
+ "I like you".to_file "en", "basic2.mp3" -->
+
+
+  <div id="howMany" class="container howMany">
+        <div class="row">
+           <!-- <div class="col-lg-1">
+                <div class="" ><h3>PICK</h3></div>
+            </div> -->
+            <div class="col-lg-6">
+                <div class="cardCounter"><h1 id="goodCardCount" class=' anim blue'></h1> from the Good side</div>
+            </div>
+            <div class="col-lg-6">
+                <div class=""><h1 id="evilCardCount" class='anim orange'></h1> from the Evil side</div>
+            </div>
+          
+        </div> 
+    </div>
+   
+
+     <div class="container box5">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="well deck">
+                  <div class="col-sm-4 border"><%= image_tag('app3.png', class: 'img-responsive tag') %>Merlin</div>
+                  <div class="col-sm-4 border" id="rpercival"><img src='/assets/app1.png' class='img-responsive', id='newPercival'><span id='perctitle'>Loyal Servant of Arthur</span></div>
+                  <div class="col-sm-4 border"><%= image_tag('app3.png', class: 'img-responsive tag') %></div>Loyal Servant of Arthur
+               </br></br>
+             <button id="percival"> Add Percival (optional)</button> </div>
+
+                </div>
+            <div class="col-sm-6">
+                <div class="well deck"><div class="col-sm-4 col-sm-offset-1"><%= image_tag('app3.png', class: 'img-responsive tag') %> Assassin</div>
+                <div class="col-sm-4 col-sm-offset-1 open minion"><%= image_tag('app3.png', class: 'img-responsive tag', id: 'img1') %><span id='title1'>Minion of Mordred</span>
+                     <br/><br/>
+                 </div>
+
+            <div class='evilbuttonsdiv'>
+            <button class='evilbutton' id="morgana">Add Morgana</button>&nbsp &nbsp<button class='evilbutton' id="mordred">Add Mordred</button>&nbsp &nbsp<button class='evilbutton'id="oberon">Add Oberon</button>
+             </div>   
+            </div>
+        </div> 
+       
+    </div>
+
+    <div class="container">
+        <button class='btn-large warning' id="activatePlayer"> Done Choosing characters</div>
+</div>
+
+<div class=' container audio'>
+    <div id='basic'>
+    <%=audio_tag("basic2.mp3",controls: true) %>
+    <div class='morgana'>
+        audio2
+    </div>
+    <div class='mordred-morgana'>
+        other
+    </div>
+</div>
+
