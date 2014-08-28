@@ -84,7 +84,6 @@ $('.evilbutton').on('click', function(ev){
 
 $('#restart').on('click', function(){
     location.reload();
-
 })
 
 $('#activatePlayer').on('click', function(){
