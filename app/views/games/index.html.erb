@@ -1,7 +1,7 @@
 
 
   <div class="container">
-    <h1 id='title'> AVALON</h1>
+    <h1 id='title'> RESISTANCE AVALON</h1>
  
     <p><em class = 'animated rubberBand'> First, pick the number of players</em>
         <div class="row">
@@ -27,10 +27,6 @@
 
     </div>
 
-
-<!--  pry
- require 'tts'
- "I like you".to_file "en", "basic2.mp3" -->
      <div class="container howMany" id="howMany">
         <div class="row">
             <div class="col-sm-6">
@@ -57,9 +53,7 @@
                 <div class="col-sm-4 col-sm-offset-1 open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img1') %><span class='title1'>Minion of Mordred</span>
                      <br/><br/>
                  </div>
-
-
-            </div>
+               </div>
             </div>
         </div>
           <!-- end of deck with 5 players -->
@@ -81,14 +75,11 @@
                 <div class="col-sm-3 col-sm-offset-1 open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img1') %><span class='title1'>Minion of Mordred</span>
                      <br/><br/>
                  </div>
-
-
-            </div>
+               </div>
             </div>
         </div>
+       <!--   end of deck with 6 players -->
 
-
-        <!--   end of deck with 6 players -->
         <!-- deck for 7 players -->
             <div class="row box box7">
               <div class="col-sm-6">
@@ -106,17 +97,13 @@
                      
                  </div>
                  <div class="col-sm-3 col-sm-offset-1 open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img2') %><span class='title2'>Minion of Mordred</span>
-                     
                  </div>
-
-
-            </div>
+              </div>
             </div>
         </div>
       
+       <!-- end of deck for 7 players -->
 
-        <!-- end of deck for 7 players -->
-         <div class="clearfix hidden-md hidden-lg"></div>
        <!--  deck of 8 players -->
           <div class="row box box8">
               <div class="col-sm-6">
@@ -132,29 +119,20 @@
                         <%= image_tag('loyal3.JPG', class: 'img-responsive tag') %>  Loyal Servant of Arthur 
                     </div>
                   </div>
-                  
                </div>
-              
-           </div>
-              
+             </div>
+           
             <div class="col-sm-6">
                 <div class="well deck8"><div class="col-sm-4"><%= image_tag('assassin.jpeg', class: 'img-responsive tag') %> Assassin</div>
                 <div class="col-sm-4  open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img1') %><span class='title1'>Minion of Mordred</span>
                      
                  </div>
                  <div class="col-sm-4  open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img2') %><span class='title2'>Minion of Mordred</span>
-                     
                  </div>
-
-
-            </div>
+               </div>
             </div>
         </div>
-      
-      
-
-
-      <!--   end of deck for 8 players -->
+       <!--   end of deck for 8 players -->
 
       <!-- deck of 9 players -->
        <div class="row box box9">
@@ -174,22 +152,17 @@
                         <%= image_tag('loyal2.JPG', class: 'img-responsive tag') %>  Loyal Servant of Arthur
                     </div>
                   </div>
-                  
-               </div>
-              
-           </div>
+                </div>
+            </div>
               
             <div class="col-sm-6">
                 <div class="well deck8 deck8ev"><div class="col-sm-4"><%= image_tag('assassin.jpeg', class: 'img-responsive tag') %> Assassin</div>
-                <div class="col-sm-4  open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img1', id: 'middle') %><span class='title1'>Minion of Mordred</span>
-                     
+                 <div class="col-sm-4  open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img1', id: 'middle') %><span class='title1'>Minion of Mordred</span>
                  </div>
                  <div class="col-sm-4  open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img2') %><span class='title2'>Minion of Mordred</span>
                      
                  </div>
-
-
-            </div>
+                </div>
             </div>
         </div>
 
@@ -215,10 +188,8 @@
                         <%= image_tag('loyal5.JPG', class: 'img-responsive tag') %>  Loyal Servant of Arthur
                     </div>
                   </div>
-                  
-               </div>
-              
-           </div>
+                </div>
+             </div>
               
             <div class="col-sm-6">
                 <div class="well deck10"><div class="col-sm-4"><%= image_tag('assassin.jpeg', class: 'img-responsive tag', id:'assassin') %> Assassin</div>
@@ -229,59 +200,68 @@
                      
                  </div>
                   <div class="col-sm-4  open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img3') %><span class='title2'>Minion of Mordred</span>
-                     
-                 </div>
-
-
-            </div>
+                </div>
+               </div>
             </div>
         </div>
-
-      
-
-         
-    
-
         <!-- end of deck with 10 players -->
 
-
-
-
-        <!-- buttons to add characters -->
+       <!-- buttons to add characters -->
         <div class="row">
               <div class="col-sm-6">
                 <div class="well"> <button id="percival"> Add Percival (optional)</button> </div>
-            </div>
-            <div class="col-sm-6">
+              </div>
+              <div class="col-sm-6">
                 <div class="well"><div class='evilbuttonsdiv'>
-            <button class='evilbutton' id="morgana">Add Morgana (optional)</button>&nbsp &nbsp<button class='evilbutton' id="mordred">Add Mordred (optional)</button>&nbsp &nbsp<button class='evilbutton'id="oberon">Add Oberon (optional)</button>
-             </div> </div>
-            </div>
-
-        </div>    
+                   <button class='evilbutton' id="morgana">Add Morgana (optional)</button>&nbsp &nbsp<button class='evilbutton' id="mordred">Add Mordred (optional)</button>&nbsp &nbsp<button class='evilbutton'id="oberon">Add Oberon (optional)</button>
+                </div> 
+              </div>
+          </div>
+          </div>    
         </div>  
     </div>
 
 
- 
+  <!--   Display audio player -->
 
-  
-
-  
-
-     <!--   Display audio player -->
-
-<div class=' container audio'>
+  <div class=' container audio'>
     <div id='basic'>
-      <%=audio_tag("basic2.mp3",controls: true) %>
+      <%=audio_tag("basic.mp3",controls: true) %>
     </div>  
-    <div class='morgana'>
-        audio2
+    <div id='Mmop'>
+        <%=audio_tag("Mmop.mp3",controls: true) %>
+      </div>
+    <div id='Mmp'>
+        <%=audio_tag("Mmp.mp3",controls: true) %>
     </div>
-    <div class='mordred-morgana'>
-        other
+    <div id='Mo'>
+        <%=audio_tag("Mo.mp3",controls: true) %>
     </div>
-</div>
+    <div id='Mop'>
+        <%=audio_tag("Mop.mp3",controls: true) %>
+    </div>
+    <div id='mordred1'>
+        <%=audio_tag("mordred1.mp3",controls: true) %>
+    </div>
+    <div id='morgObePer'>
+        <%=audio_tag("morgObePer.mp3",controls: true) %>
+    </div>
+     <div id='morgPercival'>
+        <%=audio_tag("morgPercival.mp3",controls: true) %>
+    </div>
+    <div id='Mp'>
+        <%=audio_tag("Mp.mp3",controls: true) %>
+    </div>
+     <div id='obePer'>
+        <%=audio_tag("obePer.mp3",controls: true) %>
+    </div>
+     <div id='oberon1'>
+        <%=audio_tag("oberon.mp3",controls: true) %>
+    </div>
+    <div id='percival1'>
+        <%=audio_tag("percival.mp3",controls: true) %>
+    </div>
+ </div>
 
 
     <!-- Button done choosing characters -->
@@ -292,6 +272,6 @@
     </div>
 
 
-<div id='bottom'>
+   <div id='bottom'>
     b
-</div>
+   </div>
