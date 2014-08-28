@@ -4,7 +4,10 @@ $(document).ready(function(){
 
    $('#1').hide();
    $('#show').hide();
-   $('#six').hide()
+   $('#six').hide();
+   $('#activatePlayer').hide();
+   $('#restart').hide();
+
   
   $(".fivePlayers").click(function(){
     $("#show").show();
@@ -12,7 +15,7 @@ $(document).ready(function(){
   $('#morgana').click(function(){
    $('#1').show();
   })
-  var decks = [$(".box5"), $(".box6"), $(".box7"),$(".box8")]
+  var decks = [$(".box5"), $(".box6"), $(".box7"),$(".box8"), $(".box9"), $(".box10")];
   for (var i = 0 ; i < decks.length; i++){
      decks[i].hide();
   }
@@ -49,7 +52,11 @@ $('.playerChoice').on('click', function(ev) {
   $('#howMany').show();
   $('h1.anim').addClass('animated tada zoominLeft');
   //also make the right div active
+  $(this).siblings().hide();
+  $("#restart").show();
   $('.box' + num).show();
+  $('#activatePlayer').show();
+
 
 
  
@@ -62,8 +69,8 @@ $('.playerChoice').on('click', function(ev) {
  $('#percival').on('click', function(ev){
   event.preventDefault();
   // $('#rpercival').html("<div class='col-sm-4><img src='/assets/app3.png', class='img-responsive'>Percival</div>")
-   $("#newPercival").attr("src", "/assets/app3.png");
-   $('#perctitle').text('Percival');
+   $(".newPercival").attr("src", "/assets/percival.JPG");
+   $('.perctitle').text('Percival');
    $('button#percival').hide();
    team.push('percival');
    
@@ -95,13 +102,18 @@ $('.evilbutton').on('click', function(ev){
 
 
 })
-var audio_files = {'basic':'basic2.mp3',
+var audio_files = {'':'basic.mp3',
    'percival': 'percival.mp3'};
 
 $('#activatePlayer').on('click', function(){
       $('#basic').show();
+      $('button').hide();
+
       team.sort();
       var name_audio_file = team.join();
+      alert('audio_file_name is ' + name_audio_file);
+      alert( name_audio_file === "morgana,oberon,percival");
+   
     })
 
 
@@ -111,16 +123,16 @@ $('#activatePlayer').on('click', function(){
 //if there is room, it moves the card, making the button disappear (and all the others if the deck is full
  
   function add_evil_character(name, spots_left,num){
-    var image_files = { 'morgana' : '/assets/morgana.jpeg', 
-    'oberon': '/assets/oberon.png',
-    'mordred': '/assets/mordred.jpeg'}
+    var image_files = { 'morgana' : '/assets/morgana.JPG', 
+    'oberon': '/assets/oberon.JPG',
+    'mordred': '/assets/mordred.JPG'}
     
     //name is also the button id
-    var target_element = $('#img' + spots_left);
+    var target_element = $('.img' + spots_left);
     var tab_button = $('#' + name);
     var new_picture_source = image_files[name];
     target_element.attr("src", new_picture_source );
-    var title_span = $('#title'+spots_left);
+    var title_span = $('.title'+spots_left);
     title_span.text(capitalize(name));
     tab_button.hide();
     spots_left = spots_left - 1;
@@ -128,7 +140,7 @@ $('#activatePlayer').on('click', function(){
       $('.evilbuttonsdiv').hide();
     }
 
-    // 
+  
   }
 
 
@@ -138,35 +150,7 @@ $('#activatePlayer').on('click', function(){
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-//how can I decide which dom element to go to 
+
 
  
-  //   function showNumCharacters(num) {
-  // //   // switching the active tab
-  // //   // switchActiveTab(theTopic);
-  // //   // revealing relevant articles
-  // //   // displayArticles(theTopic);
- 
-  //      var tab = $(".numPlayer" + num);
-  //      tab.show();
-  //    }
-  //   var slideDown = $('#slide-down');
-  //   var articleRow = $('#' + theTopic + '-drop'); // "tech" -> "#tech-drop"
- 
-  //   tab.siblings().removeClass('active');
-  //   tab.toggleClass('active');
- 
-  //   var isTabActive = tab.hasClass('active');
-  //   if(isTabActive) {
-  //     var isSlideDownOpen = slideDown.hasClass('open');
-  //     if(isSlideDownOpen) {
-  //       slideDown.find('.drop.open').hide().removeClass('open');
-  //       articleRow.show().addClass('open');
-  //     } else {
-  //       slideDown.find('.drop').hide();
-  //       articleRow.show().addClass('open');
-  //       slideDown.slideDown(500).addClass('open');
-  //     }
-  //   } else {
-  //     slideDown.slideUp(500).removeClass('open');
-  //   }
+  
