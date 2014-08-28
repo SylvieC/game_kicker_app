@@ -38,6 +38,7 @@ $(document).ready(function(){
     $("#restart").show();
     $('.box' + num).show();
     $('#activatePlayer').show();
+    $('#restart').show();
 });
 
 
@@ -79,6 +80,11 @@ $('.evilbutton').on('click', function(ev){
   if (spots_left > 0) {
   add_evil_character(name_clicked, spots_left, num);
 }
+})
+
+$('#restart').on('click', function(){
+    location.reload();
+
 })
 
 $('#activatePlayer').on('click', function(){
