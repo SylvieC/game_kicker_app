@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body{
   font-family:gothic;
+  background:yellow;
 }
 #titlebox{
   text-align: center;
