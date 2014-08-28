@@ -1,11 +1,24 @@
 
 
   <div class="container">
-    <h1 id='title'> RESISTANCE AVALON</h1>
+   <header>
+      <div class='col-sm-2'>
+    <%= image_tag('game.jpeg',class: 'img-responsive') %>
+    </div>
+   
+    <div class="col-sm-6"><div id='titlebox'>RESISTANCE AVALON</div></div>
+   
+    <div class="col-sm-4"><%= image_tag('images.jpeg',id: 'board', class: 'img-responsive') %> </div>  
+
+   </header>
+   <div class='clearfix'></div>
+   <br/><br/>
+
  
-    <p><em class = 'animated rubberBand'> First, pick the number of players</em>
+    <h3 class='animated rubberBand'> Number of players</h3>
+    <br/>
         <div class="row">
-            <div class="col-xs-2 playerChoice blue">
+            <div class="col-xs-2 playerChoice">
                 <div class="well box" id="box5">5</div>
             </div>
             <div class="col-xs-2 playerChoice six">
@@ -28,12 +41,12 @@
     </div>
 
      <div class="container howMany" id="howMany">
-        <div class="row">
+        <div class="row numplayer">
             <div class="col-sm-6">
-               <div class="cardCounter"><h1 id="goodCardCount" class="anim blue"></h1>from the Good Side </div>
+               <div class="cardCounter" id="goodside"><h1 id="goodCardCount" class=" anim blue"></h1>from the Good Side </div>
             </div>
             <div class="col-sm-6">
-                <div class=""><h1 id="evilCardCount" class='anim orange'></h1> from the Evil Side</div>
+                <div  id='evilside'><h1 id="evilCardCount" class='anim orange'></h1> from the Evil Side</div>
             </div>
         </div>
 
@@ -41,15 +54,15 @@
       
             <div class="row box box5">
               <div class="col-sm-6">
-                 <div class="well deck5">
-                  <div class="col-sm-4 border"><%= image_tag('merlin.jpeg', class: 'img-responsive tag') %>  Merlin</div>
+                 <div class="well deckg deck5">
+                  <div class="col-sm-4 border"><%= image_tag('merlin.JPG', class: 'img-responsive tag') %>  Merlin</div>
                   <div class="col-sm-4 border rpercival"><img src='/assets/loyal.jpeg' class='img-responsive newPercival', id='newPercival'><span class='perctitle'>Loyal Servant of Arthur</span></div>
                   <div class="col-sm-4 border"><%= image_tag('loyal2.JPG', class: 'img-responsive tag') %>Loyal Servant of Arthur</div>
                  </div>
                </div>
 
             <div class="col-sm-6">
-                <div class="well deck5 deck5ev"><div class="col-sm-4 col-sm-offset-1"><%= image_tag('assassin.jpeg', class: 'img-responsive tag') %> Assassin</div>
+                <div class="well decke deck5 deck5ev"><div class="col-sm-4 col-sm-offset-1"><%= image_tag('assassin.jpeg', class: 'img-responsive tag') %> Assassin</div>
                 <div class="col-sm-4 col-sm-offset-1 open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img1') %><span class='title1'>Minion of Mordred</span>
                      <br/><br/>
                  </div>
@@ -62,8 +75,8 @@
           <!-- deck with 6 players -->
            <div class="row box box6">
               <div class="col-sm-6">
-                 <div class="well deck6">
-                  <div class="col-sm-3 border"><%= image_tag('merlin.jpeg', class: 'img-responsive tag') %>  Merlin</div>
+                 <div class="well deckg deck6">
+                  <div class="col-sm-3 border"><%= image_tag('merlin.JPG', class: 'img-responsive tag') %>  Merlin</div>
                   <div class="col-sm-3 border" id="rpercival"><img src='/assets/loyal2.JPG' class='img-responsive newPercival'><span class='perctitle'>Loyal Servant of Arthur</span></div>
                   <div class="col-sm-3 border"><%= image_tag('loyal4.JPG', class: 'img-responsive tag') %>  Loyal Servant of Arthur </div>
                   <div class="col-sm-3 border"><%= image_tag('loyal5.JPG', class: 'img-responsive tag') %>  Loyal Servant of Arthur </div>
@@ -71,8 +84,8 @@
            </div>
 
             <div class="col-sm-6">
-                <div class="well deck6"><div class="col-sm-3 col-sm-offset-1"><%= image_tag('assassin.jpeg', class: 'img-responsive tag') %> Assassin6</div>
-                <div class="col-sm-3 col-sm-offset-1 open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img1') %><span class='title1'>Minion of Mordred</span>
+                <div class="well decke deck6"><div class="col-sm-3 col-sm-offset-1"><%= image_tag('assassin.jpeg', class: 'img-responsive tag') %> Assassin6</div>
+                <div class="col-sm-3 col-sm-offset-1 open minion"><%= image_tag('minion2.JPG', class: 'img-responsive tag img1') %><span class='title1'>Minion of Mordred</span>
                      <br/><br/>
                  </div>
                </div>
@@ -83,8 +96,8 @@
         <!-- deck for 7 players -->
             <div class="row box box7">
               <div class="col-sm-6">
-                 <div class="well deck6">
-                  <div class="col-sm-3 border"><%= image_tag('merlin.jpeg', class: 'img-responsive tag') %>  Merlin</div>
+                 <div class="well deckg deck6">
+                  <div class="col-sm-3 border"><%= image_tag('merlin.JPG', class: 'img-responsive tag') %>  Merlin</div>
                   <div class="col-sm-3 border" id="rpercival"><img src='/assets/loyal3.JPG' class='img-responsive newPercival'><span class='perctitle'>Loyal Servant of Arthur</span></div>
                   <div class="col-sm-3 border"><%= image_tag('loyal.jpeg', class: 'img-responsive tag') %>  Loyal Servant of Arthur </div>
                   <div class="col-sm-3 border"><%= image_tag('loyal4.JPG', class: 'img-responsive tag') %>  Loyal Servant of Arthur </div>
@@ -92,11 +105,11 @@
            </div>
 
             <div class="col-sm-6">
-                <div class="well deck6"><div class="col-sm-3"><%= image_tag('assassin.jpeg', class: 'img-responsive tag') %> Assassin6</div>
-                <div class="col-sm-3 col-sm-offset-1 open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img1') %><span class='title1'>Minion of Mordred</span>
+                <div class="well decke deck6"><div class="col-sm-3"><%= image_tag('assassin.jpeg', class: 'img-responsive tag') %> Assassin6</div>
+                <div class="col-sm-3 col-sm-offset-1 open minion"><%= image_tag('minionlast.JPG', class: 'img-responsive tag img1') %><span class='title1'>Minion of Mordred</span>
                      
                  </div>
-                 <div class="col-sm-3 col-sm-offset-1 open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img2') %><span class='title2'>Minion of Mordred</span>
+                 <div class="col-sm-3 col-sm-offset-1 open minion"><%= image_tag('minion2.JPG', class: 'img-responsive tag img2') %><span class='title2'>Minion of Mordred</span>
                  </div>
               </div>
             </div>
@@ -107,8 +120,8 @@
        <!--  deck of 8 players -->
           <div class="row box box8">
               <div class="col-sm-6">
-                 <div class="well deck8">
-                  <div class="col-sm-4 border"><%= image_tag('merlin.jpeg', class: 'img-responsive tag') %>  Merlin</div>
+                 <div class="well deckg deck8">
+                  <div class="col-sm-4 border"><%= image_tag('merlin.JPG', class: 'img-responsive tag',id: 'merlin8') %>  Merlin</div>
                   <div class="col-sm-4 border" id="rpercival"><img src='/assets/loyal4.JPG' class='img-responsive newPercival'><span class='perctitle'>Loyal Servant of Arthur</span></div>
                   <div class="col-sm-4 border"><%= image_tag('loyal.jpeg', class: 'img-responsive tag') %>  Loyal Servant of Arthur</div>
                   <div class="col-sm-12">
@@ -123,8 +136,8 @@
              </div>
            
             <div class="col-sm-6">
-                <div class="well deck8"><div class="col-sm-4"><%= image_tag('assassin.jpeg', class: 'img-responsive tag') %> Assassin</div>
-                <div class="col-sm-4  open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img1') %><span class='title1'>Minion of Mordred</span>
+                <div class="well decke deck8"><div class="col-sm-4"><%= image_tag('assassin.jpeg', class: 'img-responsive tag') %> Assassin</div>
+                <div class="col-sm-4  open minion"><%= image_tag('minion2.JPG', class: 'img-responsive tag img1',id: 'middle7') %><span class='title1'>Minion of Mordred</span>
                      
                  </div>
                  <div class="col-sm-4  open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img2') %><span class='title2'>Minion of Mordred</span>
@@ -137,8 +150,8 @@
       <!-- deck of 9 players -->
        <div class="row box box9">
               <div class="col-sm-6" id="deck8">
-                 <div class="well deck8">
-                  <div class="col-sm-4 border"><%= image_tag('merlin.jpeg', class: 'img-responsive tag') %>  Merlin</div>
+                 <div class="well deckg deck8">
+                  <div class="col-sm-4 border"><%= image_tag('merlin.JPG',id: 'merlin8', class: 'img-responsive tag', ) %>  Merlin</div>
                   <div class="col-sm-4 border" id="rpercival"><img src='/assets/loyal5.JPG' class='img-responsive newPercival'><span class='perctitle'>Loyal Servant of Arthur</span></div>
                   <div class="col-sm-4 border"><%= image_tag('loyal.jpeg', class: 'img-responsive tag') %>  Loyal Servant of Arthur </div>
                   <div class="col-sm-12">
@@ -156,10 +169,10 @@
             </div>
               
             <div class="col-sm-6">
-                <div class="well deck8 deck8ev"><div class="col-sm-4"><%= image_tag('assassin.jpeg', class: 'img-responsive tag') %> Assassin</div>
+                <div class="well decke deck8 deck8ev"><div class="col-sm-4"><%= image_tag('assassin.jpeg', class: 'img-responsive tag') %> Assassin</div>
                  <div class="col-sm-4  open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img1', id: 'middle') %><span class='title1'>Minion of Mordred</span>
                  </div>
-                 <div class="col-sm-4  open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img2') %><span class='title2'>Minion of Mordred</span>
+                 <div class="col-sm-4  open minion"><%= image_tag('minionlast.JPG', class: 'img-responsive tag img2') %><span class='title2'>Minion of Mordred</span>
                      
                  </div>
                 </div>
@@ -173,8 +186,8 @@
           
         <div class="row box box10">
               <div class="col-sm-6" id="deck8">
-                 <div class="well deck10">
-                  <div class="col-sm-4 border"><%= image_tag('merlin.jpeg', class: 'img-responsive tag') %>  Merlin</div>
+                 <div class="well deckg deck10">
+                  <div class="col-sm-4 border"><%= image_tag('merlin.JPG', class: 'img-responsive tag') %>  Merlin</div>
                   <div class="col-sm-4 border" id="rpercival"><img src='/assets/loyal.jpeg' class='img-responsive newPercival'><span class='perctitle'>Loyal Servant of Arthur</span></div>
                   <div class="col-sm-4 border"><%= image_tag('loyal2.JPG', class: 'img-responsive tag') %>  Loyal Servant of Arthur</div>
                   <div class="col-sm-12">
@@ -192,14 +205,14 @@
              </div>
               
             <div class="col-sm-6">
-                <div class="well deck10"><div class="col-sm-4"><%= image_tag('assassin.jpeg', class: 'img-responsive tag', id:'assassin') %> Assassin</div>
+                <div class="well decke deck10"><div class="col-sm-4"><%= image_tag('assassin.jpeg', class: 'img-responsive tag', id:'assassin') %> Assassin</div>
                 <div class="col-sm-4  open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img1') %><span class='title1'>Minion of Mordred</span>
                      
                  </div>
-                 <div class="col-sm-4  open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img2') %><span class='title2'>Minion of Mordred</span>
+                 <div class="col-sm-4  open minion"><%= image_tag('minion2.JPG', class: 'img-responsive tag img2') %><span class='title2'>Minion of Mordred</span>
                      
                  </div>
-                  <div class="col-sm-4  open minion"><%= image_tag('minion.jpeg', class: 'img-responsive tag img3') %><span class='title2'>Minion of Mordred</span>
+                  <div class="col-sm-4  open minion"><%= image_tag('minionlast.JPG', class: 'img-responsive tag img3') %><span class='title2'>Minion of Mordred</span>
                 </div>
                </div>
             </div>
@@ -209,10 +222,10 @@
        <!-- buttons to add characters -->
         <div class="row">
               <div class="col-sm-6">
-                <div class="well"> <button id="percival"> Add Percival (optional)</button> </div>
+                <div class=""> <button id="percival"> Add Percival (optional)</button> </div>
               </div>
               <div class="col-sm-6">
-                <div class="well"><div class='evilbuttonsdiv'>
+                <div class=""><div class='evilbuttonsdiv'>
                    <button class='evilbutton' id="morgana">Add Morgana (optional)</button>&nbsp &nbsp<button class='evilbutton' id="mordred">Add Mordred (optional)</button>&nbsp &nbsp<button class='evilbutton'id="oberon">Add Oberon (optional)</button>
                 </div> 
               </div>
@@ -226,39 +239,51 @@
 
   <div class=' container audio'>
     <div id='basic'>
+        <p>All players close their eyes <br/> and follow the directions from the audio file</p>
       <%=audio_tag("basic.mp3",controls: true) %>
     </div>  
     <div id='Mmop'>
+        <p>All players close their eyes <br/> and follow the directions from the audio file</p>
         <%=audio_tag("Mmop.mp3",controls: true) %>
       </div>
     <div id='Mmp'>
+        <p>All players close their eyes <br/> and follow the directions from the audio file</p>
         <%=audio_tag("Mmp.mp3",controls: true) %>
     </div>
     <div id='Mo'>
+        <p>All players close their eyes <br/> and follow the directions from the audio file</p>
         <%=audio_tag("Mo.mp3",controls: true) %>
     </div>
     <div id='Mop'>
+        <p>All players close their eyes <br/> and follow the directions from the audio file</p>
         <%=audio_tag("Mop.mp3",controls: true) %>
     </div>
     <div id='mordred1'>
+        <p>All players close their eyes <br/> and follow the directions from the audio file</p>
         <%=audio_tag("mordred1.mp3",controls: true) %>
     </div>
     <div id='morgObePer'>
+        <p>All players close their eyes <br/> and follow the directions from the audio file</p>
         <%=audio_tag("morgObePer.mp3",controls: true) %>
     </div>
      <div id='morgPercival'>
+        <p>All players close their eyes <br/> and follow the directions from the audio file</p>
         <%=audio_tag("morgPercival.mp3",controls: true) %>
     </div>
     <div id='Mp'>
+        <p>All players close their eyes <br/> and follow the directions from the audio file</p>
         <%=audio_tag("Mp.mp3",controls: true) %>
     </div>
      <div id='obePer'>
+        <p>All players close their eyes <br/> and follow the directions from the audio file</p>
         <%=audio_tag("obePer.mp3",controls: true) %>
     </div>
      <div id='oberon1'>
+        <p>All players close their eyes <br/> and follow the directions from the audio file</p>
         <%=audio_tag("oberon.mp3",controls: true) %>
     </div>
     <div id='percival1'>
+        <p>All players close their eyes <br/> and follow the directions from the audio file</p>
         <%=audio_tag("percival.mp3",controls: true) %>
     </div>
  </div>
@@ -267,9 +292,11 @@
     <!-- Button done choosing characters -->
 
     <div class="container">
-        <button class='btn-large warning' id="activatePlayer"> Done Choosing characters</button>
-            <%= link_to 'Restart', " ", :class => "btn btn-large btn-info", :id => "restart" %>
-    </div>
+
+        <button class='btn btn-success btn-xlarge' id="activatePlayer"> Done Choosing characters</button>
+           
+    
+</div>
 
 
    <div id='bottom'>

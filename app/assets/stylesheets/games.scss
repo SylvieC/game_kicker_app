@@ -2,23 +2,72 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body{
-  background:yellow
+  font-family:gothic;
 }
-h1#title{
+#titlebox{
   text-align: center;
-  margin-bottom: 40px;
+
+  background:url(image-path('greywall.jpeg'));
+  border-radius: 4px;
+  color: goldenrod;
+  font-size: 55px;
+  padding-top: 30px;
+  font-family: gothic;
+  border: goldenrod 3px solid;
+  opacity: 0.9;
+  padding-top:40px;
+
+ 
+  height:220px;
 }
-/*#morgana{
-  background: red;
+.numplayers{
   border:1px solid black;
-  width: 70px;
-  height 95px;
-}*/
-#six{
+  background:yellow;
+
+}
+
+#goodside{
+  background:#5985A9;
+}
+#evilside{
+  background:#472F31;
+}
+#goodside, #evilside{
+  padding-bottom: 25px;
+  padding-top:9px;
+}
+img#board {
+margin-top: 30px;
+}
+img#board {
+margin-top: 20px;
+height: 190px;
+}
+.rubberBand{
+  margin-left:378px;
+}
+header{
+  margin-top: 100px;
+
+}
+#box5, #box6, #box7, #box8, #box9, #box10{
+  text-align: center;
+  background: #474248;
+  color:white;
+  font-size: 20px;
+  margin-bottom: 35px;
+
+}
+#headimg{
+  margin-top:120px;
+}
+.center{
   text-align: center;
 }
+
+
 .blue{
-  color: blue;
+  color: yellow;
 
 }
 
@@ -58,13 +107,23 @@ ul{
 }
 .howMany{
   text-align:center;
+  color:white;
 }
-
+.numplayers{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+#activatePlayer{
+  background:orange;
+  height:60px;
+  font-size: 30px;
+  color:black;
+}
 #percival{
   background:lightblue;
 }
 #morgana, #mordred, #oberon{
-  background:coral;
+  background:#472F31;
 }
 
 #bottom{
@@ -98,7 +157,7 @@ padding-top: 40px;
   margin-top: 150px;
 }
 img.img-responsive.tag.img1 {
-margin-top: 90px;
+margin-top: 40px;
 }
 .deck8ev{
   padding-top: 100px;
@@ -109,3 +168,29 @@ margin-top: 90px;
 #assassin{
   margin-top:200px;
 }
+button#percival {
+margin-bottom: 30px;
+background:#5985A9;
+}
+.well.decke{
+  background:#E3BFA5;
+  color:brown;
+  font-family: gothic;
+}
+.well.deckg{
+  background:#ADD8E6;
+  color:navy;
+  font-family: gothic;
+}
+p {
+font-family: gothic;
+font-size: 20px;
+}
+#middle7{
+  margin-top: 83px;
+}
+img#merlin8 {
+margin-top: 3px;
+}
+
+

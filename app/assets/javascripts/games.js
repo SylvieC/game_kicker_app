@@ -34,6 +34,7 @@ $(document).ready(function(){
     $('h1.anim').addClass('animated tada zoominLeft');
   
     $(this).siblings().hide();
+    $(this).css('margin-left', '400px');
     $("#restart").show();
     $('.box' + num).show();
     $('#activatePlayer').show();
