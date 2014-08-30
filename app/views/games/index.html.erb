@@ -228,18 +228,42 @@
        <!-- buttons to add characters -->
         <div class="row">
               <div class="col-sm-6">
-                <div class=""> <button id="percival"> Add Percival (optional)</button> </div>
+                <div class=""><a href="#" class="popper" data-popbox="pop4"><button id="percival"> Add Percival (optional)</button></a></div>
+
               </div>
               <div class="col-sm-6">
                 <div class=""><div class='evilbuttonsdiv'>
-                   <button class='evilbutton' id="morgana">Add Morgana (optional)</button>&nbsp &nbsp<button class='evilbutton' id="mordred">Add Mordred (optional)</button>&nbsp &nbsp<button class='evilbutton'id="oberon">Add Oberon (optional)</button>
+                   <a href="#" class="popper" data-popbox="pop1"><button class='evilbutton' id="morgana">Add Morgana (optional)</button></a>&nbsp &nbsp<a href="#" class="popper" data-popbox="pop2"><button class='evilbutton' id="mordred">Add Mordred (optional)</button></a>&nbsp &nbsp<a href="#" class="popper" data-popbox="pop3"><button class='evilbutton'id="oberon">Add Oberon (optional)</button></a>
                 </div> 
               </div>
           </div>
-          </div>    
+          <div class='row'>
+            <div class='col-sm-3 col-sm-offset2'>
+              Percival knows who Merlin is
+            </div>
+
+          </div>  
+          </div>  
         </div>  
     </div>
 
+<div id="pop1" class="popbox">
+    <h2>Morgana</h2>
+    <p>Appears to be Merlin, revealing herself to Percival as Merlin</p>
+</div>
+<div id="pop2" class="popbox">
+    <h2>Mordred</h2>
+    <p>His identity is not revealed to Merlin at the start of the game</p>
+</div>
+<div id="pop3" class="popbox">
+    <h2>Oberon</h2>
+    <p>Doesn't reveal himself to the other evil players, nor does he gain knowledge of the other Evil
+      players at the start of the game. Oberon is on the Evil side. Yet, adding him to the game will make the Good side more powerful</p>
+</div>
+<div id="pop4" class="popbox">
+  <h2>Percival</h2>
+    <p>knows who Merlin is at the start of the game (key for protecting Merlin's identity)</p>
+</div>
 
   <!--   Display audio player -->
 
@@ -303,6 +327,15 @@
            
     
 </div>
+<!-- <div id="pop1" class="popbox">
+    <h2>Morgana</h2>
+    <p>knows who Percival is</p>
+</div>
+<div id="pop2" class="popbox">
+    <h2>Mordred</h2>
+    <p>Knows who Merlin is</p>
+</div> -->
+ 
 
 
    <div id='bottom'>

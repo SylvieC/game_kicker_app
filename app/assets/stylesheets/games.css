@@ -51,7 +51,7 @@ header{
 }
 #box5, #box6, #box7, #box8, #box9, #box10{
   text-align: center;
-  background: goldenrod;
+  background: darkgrey;
   color:white;
   font-size: 20px;
   margin-bottom: 35px;
@@ -121,6 +121,7 @@ ul{
   height:60px;
   font-size: 30px;
   color:black;
+  margin: 0 auto;
 }
 #percival{
   background:lightblue;
@@ -195,5 +196,49 @@ font-size: 20px;
 img#merlin8 {
 margin-top: 3px;
 }
+#morgana:hover{
+  background:blue;
+}
+#mordred:hover{
+  background:blue;
+}
+#percival:hover{
+  background:blue;
+}
+#oberon:hover{
+  background:blue;
+}
 
+span#infoPercival {
+color: black;
+}
+#percival:hover>span#Percival{display:block;}
+#morgana>#hide { display:none; }
+#morgana:hover>#hide{ display: block; }
 
+.popbox {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    width: 400px;
+    padding: 10px;
+    background: #EEEFEB;
+    color: #000000;
+    border: 1px solid #4D4F53;
+    margin: 0px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
+    box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
+}
+.popbox h2
+{
+    background-color: #4D4F53;
+    color:  #E3E5DD;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    margin: -10px 0px 8px -10px;
+    padding: 5px 10px;
+}
+button#morgana, button#mordred, button#oberon, button#percival{
+  color:white;
+}
