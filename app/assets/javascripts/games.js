@@ -42,6 +42,36 @@ $(document).ready(function(){
     $('#restart').show();
 });
 
+  var changing = {  "mordred.JPG" : 'mordred', 
+                    "oberon.JPG" : "oberon",
+                    "morgana.JPG":'morgana'
+                  }
+
+  //part to deal  with the user changing his mind after he has chosen a character
+  // $('.img1').on('click', function(e){
+  //  e.preventDefault9);
+  //  var src = this.src;
+  //  var arr = src.split('/');
+  //  var pict_name = arr[arr.length -1]; // for example 'mordred.JPG'
+  //  //get the name
+  //  var name = pict_name.split('.')[0];
+  //  $('#' + name).show();
+  //  -----
+  //  $(this).hide();
+  //   $('button#' + name).show();
+  //   team.splice(team.indexOf(name));
+  //  $(this).attr('src', );
+  //  $('.newPercival').show();
+  //  $('.perctitle').text('Loyal servant of Arthur')
+
+  //  -----
+
+
+
+
+  // })
+
+
 
 //option to add percival
  $('#percival').on('click', function(ev){
@@ -51,7 +81,22 @@ $(document).ready(function(){
    $('.perctitle').text('Percival');
    $('button#percival').hide();
    team.push('percival');
-  })
+   
+  });
+
+
+ $('.newPercival').click(function(ev) {
+    // remove percival
+    ev.preventDefault();
+    $(this).hide();
+    $('button#percival').show();
+    team.splice(team.indexOf('percival'));
+   $('.newPercival').attr('src', '/assets/loyal2.JPG');
+   $('.newPercival').show();
+   $('.perctitle').text('Loyal servant of Arthur')
+   
+  
+ });
  var spots_left; 
 
 
